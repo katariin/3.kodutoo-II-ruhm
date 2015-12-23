@@ -5,7 +5,7 @@
 		//kas kasutaja uundab andmeid
 		if(isset($_POST["update"])){
 			
-			updateClothes($_POST["id"], $_POST["clothes"], $_POST["brand"], $_POST["size"], $_POST["color"]);
+			updateClothes($_POST["id"], $_POST["user_id"], $_POST["clothes"], $_POST["brand"], $_POST["size"], $_POST["color"]);
 		}
 		
 		

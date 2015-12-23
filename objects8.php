@@ -22,7 +22,7 @@
 	$error->id = 0;
 	$error->message("Unknown error");
 	
-	$error->id = 2;
+	$error->id = 3;
 	$error->message("Wrong password");	
 	
 ?>

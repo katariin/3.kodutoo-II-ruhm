@@ -10,7 +10,7 @@
 			$mysqli = new mysqli($GLOBALS["servername"], $GLOBALS["server_username"], $GLOBALS["server_password"], $GLOBALS["database"]);
 			
 			$stmt = $mysqli->prepare("SELECT id, user_id, clothes, brand, size, color FROM fashion WHERE deleted IS NULL");
-			$stmt->bind_result($id, $user_id, $clothes, $brand, $size, $color_from_db);
+			$stmt->bind_result($id, $user_id, $clothes, $brand, $size, $color);
 			$stmt->execute();
 			
 			//tyhi  massiv kus hoiame objekte
@@ -25,7 +25,7 @@
 				$mode->clothes = $clothes;
 				$mode->brand = $brand;
 				$mode->size = $size;
-				$mode->color = $color_from_db;
+				$mode->color = $color;
 				
 				    // lisame selle massiivi
 					array_push($array, $mode);

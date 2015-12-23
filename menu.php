@@ -10,17 +10,19 @@
    
 	
 	<li>
-	<a href="home.php">Logi_sisse</a>
+	<a href="home.php">Kasulik avaleht</a>
 	</li>
 	
    <?php } ?>
    
    <?php
    
-   if($file_name == "vlogin.php") {
+   if($file_name == "vlogin.php"){
 	    echo "<li>Logi sisse</li>";
 		
    }else{
          echo '<li><a href ="vlogin.php">Logi sisse</li>' ;
    }
    ?>
+   
+  </ul>
