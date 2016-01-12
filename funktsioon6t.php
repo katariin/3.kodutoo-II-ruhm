@@ -4,6 +4,7 @@
 	    require_once("config.php");
 		$database="if15_jekavor";
 
+		
 	// loome uue funktsiooni
         function getClothes() {
 			
